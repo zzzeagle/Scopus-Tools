@@ -42,10 +42,10 @@ for author in authors:
 		paper.append(entry.get('prism:pageRange'))
 		
 		#Author stores a lot of extraneous data. Loop to get just the names.
-		authors = entry.get('author')
+		paperAuthors = entry.get('author')
 		authorList = []
-		for aut in authors:
-			authorList.append(aut.get('authname'))
+		for paperAuthor in paperAuthors:
+			authorList.append(paperAuthor.get('authname'))
 		paper.append(authorList)
 		
 		#Write results
